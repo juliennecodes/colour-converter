@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <main>
-        <h1>Colour Converter</h1>
+        <h1 className="underline text-blue-700 text-5xl">Colour Converter</h1>
         <ColourInput setHSLColour={setHSLColour}/>
 
         <ColourOutput hslColour={hslColour}/>
