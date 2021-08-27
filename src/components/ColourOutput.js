@@ -13,37 +13,31 @@ function YesColourOutput({ hslColour }) {
     const lightness = hslColour.lightness;
 
   return (
-    <section className="colour-output-section">
+    <section className="colour-output-section grid cols-1 my-3 border-2 border-solid border-blue-900 gap-3 rounded-lg px-8 py-12 justify-items-center shadow-lg">
       <div
-        className="colour-swatch"
+        className="colour-swatch rounded-lg w-64 h-64"
         style={{
           backgroundColor: `hsl(${hue}, ${saturation}%, ${lightness}%)`,
-          height: "250px",
-          width: "250px",
         }}
       ></div>
 
       <div className="hsl-text" onClick={()=> copyColourToClipboard(hue, saturation, lightness)}>
-        <p className="hsl-value">{`hsl(${hue}, ${saturation}%, ${lightness}%)`}</p>
+        <p className="hsl-value text-2xl ">{`hsl(${hue}, ${saturation}%, ${lightness}%)`}</p>
       </div>
+
     </section>
   );
 }
 
 function NoColourOutput() {
   return (
-    <section className="colour-output-section">
+    <section className="colour-output-section grid cols-1 my-3 border-2 border-solid border-blue-900 gap-3 rounded-lg px-8 py-12 justify-items-center shadow-lg">
       <div
-        className="colour-swatch"
-        style={{
-          border: "2px dotted black",
-          height: "250px",
-          width: "250px",
-        }}
+        className="colour-swatch border-4 border-dotted border-blue-900 w-64 h-64"
       ></div>
 
       <div className="hsl-text">
-        <p>No colour just yet</p>
+        <p className="text-2xl">No colour just yet</p>
       </div>
     </section>
   );
