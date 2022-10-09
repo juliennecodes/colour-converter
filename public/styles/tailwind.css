@@ -6839,6 +6839,10 @@ video {
   min-width: 0px;
 }
 
+.min-w-480 {
+  min-width: 480px;
+}
+
 .min-w-full {
   min-width: 100%;
 }
