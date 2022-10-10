@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css","webpack://src/App.css"],"names":[],"mappings":"AAAA,cAAc,CACd,oBAAoB,CACpB,mBAAmB,CCFnB,KACI,oBACJ","file":"main.e277719e.chunk.css","sourcesContent":["@tailwind base;\n@tailwind components;\n@tailwind utilities;","body {\n    font-family: \"Nunito\";\n}"]}
